@@ -1,0 +1,312 @@
+@import './mixins/mixin.css';
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  padding: 60px 100px;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+html body {
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+  gap: 40px;
+}
+header p {
+  font-size: 25px;
+  margin-top: 5px;
+  color: #191A23;
+}
+header div {
+  display: flex;
+  gap: 10px;
+}
+header button {
+  background-color: white;
+  border: 1px solid #097705;
+  border-radius: 10px;
+  width: 230px;
+  height: 45px;
+  position: relative;
+  bottom: 12px;
+}
+header img {
+  width: 36px;
+  height: 36px;
+}
+header button:hover {
+  background-color: black;
+  transition: background-color 1s ease, color 1s ease;
+  color: white;
+}
+
+.main-content-div {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content-div:nth-child(1) h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.nth-child {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 50px;
+}
+.nth-child button {
+  width: 265px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #191A23;
+  color: #F3F3F3;
+}
+
+.easy-section {
+  margin-bottom: 140px;
+}
+.easy-section ul {
+  display: flex;
+  justify-content: space-between;
+}
+.easy-section div {
+  display: flex;
+}
+
+.normal-section {
+  margin-bottom: 80px;
+}
+.normal-section div {
+  display: flex;
+  gap: 40px;
+}
+
+.services {
+  background-color: #B9FF66;
+  width: 90px;
+  height: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.hard-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hard-left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hard1 {
+  width: 600px;
+  height: 300px;
+  background-color: #F3F3F3;
+  border: 1px solid black;
+  border-radius: 15px;
+  border-bottom: 7px solid black;
+  display: flex;
+  gap: 140px;
+}
+.hard1 .arrow {
+  width: 41px;
+  height: 41px;
+}
+.hard1 .inside-h1 {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  padding-left: 50px;
+  font-weight: 700;
+}
+.hard1 .inside-h1 p {
+  background-color: #B9FF66;
+  width: 160px;
+  height: 42px;
+  font-size: 20px;
+}
+.hard1 .hard-section-imp-div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hard2 {
+  width: 600px;
+  height: 300px;
+  background-color: black;
+  border-radius: 15px;
+  display: flex;
+  gap: 140px;
+}
+.hard2 .inside-h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+  padding-left: 50px;
+  color: white;
+  font-weight: 700;
+}
+.hard2 .hard-section-imp-div2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.hard2 p {
+  color: black;
+  background-color: white;
+  width: 160px;
+  height: 42px;
+  font-size: 20px;
+}
+
+.hard3 {
+  width: 600px;
+  height: 300px;
+  background-color: #B9FF66;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  gap: 140px;
+  border-bottom: 7px solid black;
+}
+.hard3 .inside-h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+  color: black;
+  font-weight: 700;
+}
+.hard3 .hard-section-imp-div3 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.hard3 p {
+  color: black;
+  background-color: white;
+  width: 100px;
+  height: 42px;
+  font-size: 20px;
+}
+
+.hard-right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hard4 {
+  width: 600px;
+  height: 300px;
+  background-color: #B9FF66;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  gap: 140px;
+  border-bottom: 7px solid black;
+}
+.hard4 .inside-h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+  padding-left: 50px;
+  color: black;
+  font-weight: 700;
+}
+.hard4 .hard-section-imp-div3 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.hard4 p {
+  color: black;
+  background-color: white;
+  width: 130px;
+  height: 42px;
+  font-size: 20px;
+}
+
+.hard5 {
+  width: 600px;
+  height: 300px;
+  background-color: #dfdfdf;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  gap: 140px;
+  border-bottom: 7px solid black;
+}
+.hard5 .inside-h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+  padding-left: 50px;
+  color: black;
+  font-weight: 700;
+}
+.hard5 .hard-section-imp-div3 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.hard5 p {
+  color: black;
+  background-color: #B9FF66;
+  width: 105px;
+  height: 42px;
+  font-size: 20px;
+}
+
+.hard6 {
+  width: 600px;
+  height: 300px;
+  background-color: black;
+  border-radius: 15px;
+  display: flex;
+  gap: 140px;
+}
+.hard6 .inside-h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+  padding-left: 50px;
+  color: white;
+  font-weight: 700;
+}
+.hard6 .hard-section-imp-div2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.hard6 p {
+  color: black;
+  background-color: #B9FF66;
+  width: 160px;
+  height: 42px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */

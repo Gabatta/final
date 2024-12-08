@@ -1,0 +1,116 @@
+@media (max-width: 768px) {
+  .body .burger {
+    display: block;
+  }
+  .body header {
+    display: flex;
+  }
+  .body header ul {
+    display: none;
+  }
+  .body header .logo {
+    width: 144px;
+    height: 23px;
+  }
+  .body header .burger {
+    width: 100%;
+    max-width: 24px;
+    height: 16px;
+  }
+  .body .easy-section ul {
+    flex-wrap: wrap;
+  }
+  .body .normal-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .body .normal-section div .team {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 45px;
+  }
+  .body .main-content-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .body .main-content-div h1 {
+    display: flex;
+    order: 0;
+  }
+  .body .main-content-div p {
+    display: flex;
+    order: 1;
+  }
+  .body .main-content-div button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+  }
+  .body .main-content-div .image-container {
+    display: flex;
+    order: 1;
+  }
+  .body .easy-section2 {
+    width: 390px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .body .easy-section2 img {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .body .hard-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .body .normal-section3 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .body .normal-section3 div p {
+    text-align: center;
+  }
+  .body .normal-section3 div .team {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 45px;
+    text-align: center;
+  }
+  .body .impossible-section {
+    width: 430px;
+    height: 710px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .body .impossible-section-2 .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .body .impossible-section-2 button {
+    display: none;
+  }
+  .body .forms-section {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 540px;
+  }
+  .body .forms-section input {
+    width: 330px;
+    height: 60px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

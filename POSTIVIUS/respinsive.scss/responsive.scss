@@ -1,0 +1,155 @@
+@media (max-width: 768px) {
+  .body {
+    .burger {
+      display: block;
+    }
+
+
+  
+
+  header {
+    display: flex;
+    & ul {
+      display: none;
+    }
+    & .logo {
+      width: 144px;
+      height: 23px;
+    }
+    & .burger {
+      width: 100%;
+      max-width: 24px;
+      height: 16px;
+    }
+  }
+
+  & .easy-section {
+    & ul {
+      flex-wrap: wrap;
+    }
+  }
+
+  & .normal-section {
+    & div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      & .team{
+        width: fit-content;
+        height: 45px;
+    }
+    }
+
+
+  }
+
+  .main-content-div{
+    display: flex;
+    flex-direction: column;
+    
+    & h1{
+      display: flex;
+      order: 0;
+    }
+
+    & p{
+      display: flex;
+      order: 1;
+    }
+
+    & button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      order: 2;
+    }
+
+    & .image-container{
+      display: flex;
+      order: 1;
+    }
+  }
+
+  & .easy-section2{
+    width: 390px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    & div{
+
+    }
+    & img{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+
+    }
+  }
+
+  & .hard-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  & .normal-section3{
+    & div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      & p{
+        text-align: center;
+      }
+
+      & .team{
+        width: fit-content;
+        height: 45px;
+        text-align: center;
+    }
+    }
+  }
+
+  & .impossible-section{
+    width: 430px;
+    height: 710px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+  }
+
+  & .impossible-section-2{
+    & .flex-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    button{
+      display: none;
+    }
+  }
+
+  & .forms-section{
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 540px;
+
+    & input{
+      width: 330px;
+      height: 60px;
+    }
+  }
+}
+}
