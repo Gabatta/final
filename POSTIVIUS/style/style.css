@@ -1,9 +1,22 @@
+.geolab {
+  width: 111px;
+  height: 80px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.image-container-responsive {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .body {
-  padding: 60px 100px;
+  padding: 60px 100px 0px;
   width: 1440px;
   margin: 0 auto;
 }
@@ -100,6 +113,7 @@ header button:hover {
 }
 .normal-section div {
   display: flex;
+  align-items: center;
   gap: 40px;
 }
 
@@ -626,6 +640,7 @@ h1 .opened {
   display: flex;
   padding-top: 84px;
   gap: 50px;
+  width: 500%;
 }
 .notes-container .non-rotate {
   width: 605px;
@@ -634,8 +649,71 @@ h1 .opened {
   border-radius: 45px;
   color: white;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-300px);
+}
+.notes-container .non-rotate .p-color {
+  color: #b9ff66;
+  font-size: 18px;
+}
+.notes-container .non-rotate .we {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 52px;
+  position: relative;
+}
+.notes-container .non-rotate .we span {
+  position: absolute;
+  bottom: -100px;
+  left: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.notes-container .non-rotate::before {
+  content: "";
+  width: 50.5px;
+  height: 50.5px;
+  position: absolute;
+  border-bottom: 2px solid #b9ff66;
+  border-right: 2px solid #b9ff66;
+  left: 50px;
+  bottom: -27.25px;
+  transform: rotate(45deg);
+  background-color: #191a23;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+}
+.icons-container span {
+  display: flex;
+  align-items: flex-end;
+  height: 250px;
+  justify-content: center;
+}
+.icons-container span li {
+  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  position: relative;
+  left: 80px;
+  padding-bottom: 5px;
+}
+.icons-container span div {
+  display: flex;
+  gap: 500px;
+  width: 50px;
+  height: 30px;
+}
+.icons-container div {
+  display: flex;
+  justify-content: center;
+  width: 145px;
+  height: 15px;
 }
 
 .forms-section {
@@ -645,6 +723,8 @@ h1 .opened {
   border-radius: 45px;
   padding: 60px 100px;
   margin-bottom: 140px;
+  display: flex;
+  gap: 255px;
 }
 .forms-section .label-flex {
   display: flex;
@@ -710,7 +790,9 @@ footer {
   height: 515px;
   background-color: #191a23;
   padding: 55px 60px;
-  border-radius: 45px;
+  border-radius: 0;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
   color: #f3f3f3;
 }
 footer ul {
@@ -785,4 +867,15 @@ footer .omg {
   display: flex;
   gap: 40px;
   margin-top: 50px;
+}
+
+.responsive-none {
+  display: none;
+}
+
+.resp {
+  display: none;
+  background-color: #b9ff66;
+  color: black;
+  padding: 7px 7px;
 }/*# sourceMappingURL=style.css.map */

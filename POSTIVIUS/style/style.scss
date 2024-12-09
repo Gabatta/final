@@ -2,12 +2,25 @@ $main-color: #b9ff66;
 $secondary-color: #191a23;
 $third-color: #f3f3f3;
 
+.geolab{
+  width: 111px;
+  height: 80px;
+}
+
+button{
+  cursor: pointer;
+}
+
+.image-container-responsive{
+  display: none;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .body {
-  padding: 60px 100px;
+  padding: 60px 100px 0px;
   width: 1440px;
   margin: 0 auto;
 }
@@ -125,6 +138,7 @@ header {
 
   & div {
     display: flex;
+    align-items: center;
     gap: 40px;
   }
 }
@@ -708,6 +722,8 @@ h1 .opened {
   display: flex;
   padding-top: 84px;
   gap: 50px;
+  width: 500%;
+
   & .non-rotate{
     width: 605px;
     height: 235px;
@@ -715,8 +731,79 @@ h1 .opened {
     border-radius: 45px;
     color: white;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    transform: translateX(-300px);
+
+    & .p-color{
+      color: $main-color;
+      font-size: 18px;
+    }
+
+    .we{
+      display: flex;
+      flex-direction: column;
+      padding: 48px 52px;
+      position: relative;
+
+      & span{
+        position: absolute;
+        bottom: -100px;
+        left: 75px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+      }
+    }
+
+
+    &::before {
+      content: "";
+      width: 50.5px;
+      height: 50.5px;
+      position: absolute;
+      border-bottom: 2px solid $main-color;
+      border-right: 2px solid $main-color;
+      left: 50px;
+      bottom: -27.25px;
+      transform: rotate(45deg);
+      background-color: #191a23;
+    }
+  }
+}
+
+.icons-container{
+  display: flex;
+  justify-content: center;
+  & span{
+    display: flex;
+    align-items: flex-end;
+    height: 250px;
+    justify-content: center;
+    
+    & li{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+      left: 80px;
+      padding-bottom: 5px;
+    }
+
+    & div{
+      display: flex;
+      gap: 500px;
+      width: 50px;
+      height: 30px;
+    }
+  }
+
+  & div{
+    display: flex;
+    justify-content: center;
+    width: 145px;
+    height: 15px;
   }
 }
 
@@ -728,6 +815,8 @@ h1 .opened {
   border-radius: 45px;
   padding: 60px 100px;
   margin-bottom: 140px;
+  display: flex;
+  gap: 255px;
 
   & .label-flex{
     display: flex;
@@ -807,7 +896,9 @@ footer{
   height: 515px;
   background-color: $secondary-color;
   padding: 55px 60px;
-  border-radius: 45px;
+  border-radius: 0;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
   color: $third-color;
 
   & ul{
@@ -852,6 +943,8 @@ footer{
     color: black;
     font-size: 20px;
    }
+
+
 
    & .form{
     width: 635px;
@@ -902,3 +995,14 @@ footer{
   }
 
 } 
+
+.responsive-none{
+  display: none;
+}
+
+.resp{
+  display: none;
+  background-color: $main-color;
+  color: black;
+  padding: 7px 7px;
+}

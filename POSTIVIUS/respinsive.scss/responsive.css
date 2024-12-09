@@ -1,116 +1,115 @@
 @media (max-width: 768px) {
-  .body .burger {
-    display: block;
+  .body {
+    padding: 30px 10px;
+    width: 1000px;
   }
   .body header {
     display: flex;
+    justify-content: space-between;
   }
   .body header ul {
     display: none;
   }
-  .body header .logo {
-    width: 144px;
-    height: 23px;
-  }
   .body header .burger {
-    width: 100%;
-    max-width: 24px;
-    height: 16px;
+    display: block;
+  }
+  .body header button {
+    margin-left: 50px;
+  }
+  .body .main-content-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .body .main-content-div .image-container {
+    display: none;
+  }
+  .body .main-content-div .image-container-responsive {
+    display: block;
+  }
+  .body .main-content-div .image-container-responsive img {
+    width: 430px;
+    height: 310px;
+  }
+  .body .easy-section {
+    display: flex;
+    justify-content: center;
   }
   .body .easy-section ul {
+    display: flex;
+    width: 445px;
     flex-wrap: wrap;
+    animation: slide 6s linear infinite;
   }
   .body .normal-section div {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .body .normal-section div .team {
-    width: -moz-fit-content;
-    width: fit-content;
-    height: 45px;
-  }
-  .body .main-content-div {
-    display: flex;
-    flex-direction: column;
-  }
-  .body .main-content-div h1 {
-    display: flex;
-    order: 0;
-  }
-  .body .main-content-div p {
-    display: flex;
-    order: 1;
-  }
-  .body .main-content-div button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    order: 2;
-  }
-  .body .main-content-div .image-container {
-    display: flex;
-    order: 1;
-  }
-  .body .easy-section2 {
-    width: 390px;
-    height: 370px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .body .easy-section2 img {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
+    text-align: center;
   }
   .body .hard-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 30px;
+    align-items: center;
+  }
+  .body .easy-section2 {
+    height: 370px;
+    display: flex;
+    justify-content: center;
+  }
+  .body .easy-section2 .div {
+    margin: 0 auto;
+  }
+  .body .easy-section2 img {
+    display: none;
+  }
+  .body .normal-section2 div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .body .extreme-section {
+    position: relative;
+    right: 30px;
   }
   .body .normal-section3 div {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .body .normal-section3 div p {
     text-align: center;
   }
-  .body .normal-section3 div .team {
-    width: -moz-fit-content;
-    width: fit-content;
-    height: 45px;
-    text-align: center;
-  }
-  .body .impossible-section {
-    width: 430px;
-    height: 710px;
+  .body .impossible-section-2 {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   .body .impossible-section-2 .flex-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 30px;
   }
   .body .impossible-section-2 button {
     display: none;
   }
-  .body .forms-section {
+  .body .impossible-section-3 {
+    width: 1080px;
     display: flex;
-    flex-direction: column;
-    width: 390px;
-    height: 540px;
+    justify-content: center;
   }
-  .body .forms-section input {
-    width: 330px;
-    height: 60px;
+  .body .forms-section {
+    width: 1090px;
+    height: px;
+    display: flex;
+    justify-content: center;
+  }
+  .body .forms-section img {
+    display: none;
+  }
+  .body footer {
+    width: 1150px;
+  }
+  .body footer img-sssppan {
+    position: relative;
+    right: 50px;
   }
 }/*# sourceMappingURL=responsive.css.map */
