@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
   .body {
     padding: 30px 10px;
-    width: 200%;
+    width: 150%;
   }
   .body header {
     display: flex;
