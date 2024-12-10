@@ -880,3 +880,12 @@ footer .omg {
   color: black;
   padding: 7px 7px;
 }/*# sourceMappingURL=index.css.map */
+
+@keyframes slide {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
